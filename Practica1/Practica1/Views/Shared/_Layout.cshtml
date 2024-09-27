@@ -1,40 +1,159 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="~/Styles/css/style.css">
+    <link rel="stylesheet" href="~/Styles/css/camera.css">
+    <script src="~/Styles/js/jquery.js"></script>
+    <script src="~/Styles/js/jquery-migrate-1.1.1.js"></script>
+    <script src="~/Styles/js/script.js"></script>
+    <script src="~/Styles/js/superfish.js"></script>
+    <script src="~/Styles/js/jquery.ui.totop.js"></script>
+    <script src="~/Styles/js/jquery.equalheights.js"></script>
+    <script src="~/Styles/js/jquery.mobilemenu.js"></script>
+    <script src="~/Styles/js/jquery.easing.1.3.js"></script>
+    <script src="~/Styles/js/camera.js"></script>
+
+
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="~/Styles/js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script src="~/Styles/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script src="~/Styles/js/jquery.touchSwipe.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            jQuery('#camera_wrap').camera({
+                loader: false,
+                pagination: false,
+                thumbnails: false,
+                height: '26.89655172413793%',
+                caption: false,
+                navigation: true,
+                fx: 'mosaic'
+            });
+        });
+
+
+        $(document).ready(function () {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+
+
+        $(window).load(
+            function () {
+                $('.carousel1').carouFredSel({
+                    auto: false, prev: '#prev_slide', next: '#next_slide', width: 960, items: {
+                        visible: {
+                            min: 1,
+                            max: 1
+                        },
+                        height: 'auto',
+                        width: 230,
+
+                    }, responsive: true,
+
+                    scroll: 1,
+
+                    mousewheel: false,
+
+                    swipe: { onMouse: true, onTouch: true }
+                });
+
+            });
+        jQuery(function () {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+
+    </script>
+    <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+    <![endif]-->
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-        <div class="container">
-            @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+<body class="page1">
+    <!--==============================header=================================-->
+    @RenderBody()
+    <header>
+        <div class="head-box1">
+            <div class="container_24">
+                <h1><a class="logo" href="index.html"><img src="~/Styles/images/logo.png" alt="Pasta &amp; Ravioli Co.prefix"></a></h1>
+                <form id="search1" action="search.php" method="GET">
+                    <input type="text" name="s">
+                    <div class="clear"></div>
+                    <a onClick="document.getElementById('search1').submit()" class="search-button"></a>
+                    <div class="clear"></div>
+                </form>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="head-box2">
+            <div class="container_24">
+                <div class="grid_24">
+                    <nav>
+                        <ul class="sf-menu">
+                            <li class="current"><a class="active" href="index.html">home</a></li>
+                            <li><a href="index-1.html">About Us</a></li>
+                            <li>
+                                <a href="index-2.html">Products</a>
+                                <ul>
+                                    <li><a href="#">what’s new</a></li>
+                                    <li><a href="#">most popular</a></li>
+                                    <li><a href="#">gallery</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index-3.html">Recipes</a></li>
+                            <li><a href="index-4.html">Catering</a></li>
+                            <li><a href="index-5.html">Contacts</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+    <!--==============================footer=================================-->
+    <footer>
+        <div class="container_24">
+            <div class="grid_24">
+
+                <ul class="foot-menu">
+                    <li class="last3"><a class="active" href="index.html">Home</a></li>
+                    <li><a href="index-1.html">About Us</a></li>
+                    <li><a href="index-2.html">Products</a></li>
+                    <li><a href="index-3.html">Recipes</a></li>
+                    <li><a href="index-4.html">Catering</a></li>
+                    <li><a href="index-5.html">Contacts</a></li>
+                </ul>
+
+
+
+                <div class="foot-page2">
+                    <span class="text6">Pasta &amp; Ravioli Co.</span>
+                    &copy; 2013  |   <a href="index-6.html">Privacy Policy</a>  <!-- {%FOOTER_LINK} -->
+                </div> <div class="clear"></div> <ul class="soc-links">
+                    <li><a class="soc-link1" href="#"></a></li>
+                    <li><a class="soc-link2" href="#"></a></li>
+                    <li><a class="soc-link3" href="#"></a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    </footer>
 </body>
 </html>

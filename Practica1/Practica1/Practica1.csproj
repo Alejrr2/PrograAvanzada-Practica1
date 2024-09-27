@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BFAF8D0E-7FB7-47BC-BCE3-D235B6CC91EA}</ProjectGuid>
+    <ProjectGuid>{31E7BDE7-A8C8-4EFC-AE43-69E7AF3746A1}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -18,7 +18,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44354</IISExpressSSLPort>
+    <IISExpressSSLPort>44389</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -163,6 +163,113 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Styles\css\camera.css" />
+    <Content Include="Styles\css\form.css" />
+    <Content Include="Styles\css\ie.css" />
+    <Content Include="Styles\css\jquery.fancybox-1.3.4.css" />
+    <Content Include="Styles\css\reset.css" />
+    <Content Include="Styles\css\skeleton.css" />
+    <Content Include="Styles\css\style.css" />
+    <Content Include="Styles\css\superfish.css" />
+    <Content Include="Styles\images\arrows.png" />
+    <Content Include="Styles\images\banner1.jpg" />
+    <Content Include="Styles\images\banner2.jpg" />
+    <Content Include="Styles\images\banner3.jpg" />
+    <Content Include="Styles\images\bg1.gif" />
+    <Content Include="Styles\images\bot-bottom.png" />
+    <Content Include="Styles\images\bot-top.png" />
+    <Content Include="Styles\images\button-l.png" />
+    <Content Include="Styles\images\button-m.png" />
+    <Content Include="Styles\images\button-r.png" />
+    <Content Include="Styles\images\camera-loader.gif" />
+    <Content Include="Styles\images\contbg.gif" />
+    <Content Include="Styles\images\contbg2.gif" />
+    <Content Include="Styles\images\content-bg.gif" />
+    <Content Include="Styles\images\divider1.gif" />
+    <Content Include="Styles\images\divider2.png" />
+    <Content Include="Styles\images\divider3.gif" />
+    <Content Include="Styles\images\fancybox-x.png" />
+    <Content Include="Styles\images\fancybox-y.png" />
+    <Content Include="Styles\images\fancybox.png" />
+    <Content Include="Styles\images\fancy_close.png" />
+    <Content Include="Styles\images\fancy_loading.png" />
+    <Content Include="Styles\images\fancy_nav_left.png" />
+    <Content Include="Styles\images\fancy_nav_right.png" />
+    <Content Include="Styles\images\fancy_shadow_e.png" />
+    <Content Include="Styles\images\fancy_shadow_n.png" />
+    <Content Include="Styles\images\fancy_shadow_ne.png" />
+    <Content Include="Styles\images\fancy_shadow_nw.png" />
+    <Content Include="Styles\images\fancy_shadow_s.png" />
+    <Content Include="Styles\images\fancy_shadow_se.png" />
+    <Content Include="Styles\images\fancy_shadow_sw.png" />
+    <Content Include="Styles\images\fancy_shadow_w.png" />
+    <Content Include="Styles\images\fancy_title_left.png" />
+    <Content Include="Styles\images\fancy_title_main.png" />
+    <Content Include="Styles\images\fancy_title_over.png" />
+    <Content Include="Styles\images\fancy_title_right.png" />
+    <Content Include="Styles\images\favicon.ico" />
+    <Content Include="Styles\images\head-bg1.gif" />
+    <Content Include="Styles\images\head-bg2.png" />
+    <Content Include="Styles\images\logo.png" />
+    <Content Include="Styles\images\marker1.png" />
+    <Content Include="Styles\images\marker2.png" />
+    <Content Include="Styles\images\menu-bg.gif" />
+    <Content Include="Styles\images\menu-bg2.gif" />
+    <Content Include="Styles\images\next.png" />
+    <Content Include="Styles\images\next1.gif" />
+    <Content Include="Styles\images\page1-img1.jpg" />
+    <Content Include="Styles\images\page1-img2.jpg" />
+    <Content Include="Styles\images\page1-img3.jpg" />
+    <Content Include="Styles\images\page1-img4.jpg" />
+    <Content Include="Styles\images\page1-img5.jpg" />
+    <Content Include="Styles\images\page1-img6.jpg" />
+    <Content Include="Styles\images\page2-img1.jpg" />
+    <Content Include="Styles\images\page2-img2.jpg" />
+    <Content Include="Styles\images\page2-img3.jpg" />
+    <Content Include="Styles\images\page3-img1.jpg" />
+    <Content Include="Styles\images\page3-img2.jpg" />
+    <Content Include="Styles\images\page3-img3.jpg" />
+    <Content Include="Styles\images\page3-img4.jpg" />
+    <Content Include="Styles\images\page3-img5.jpg" />
+    <Content Include="Styles\images\page3-img6.jpg" />
+    <Content Include="Styles\images\page3-img7.jpg" />
+    <Content Include="Styles\images\page3-img8.jpg" />
+    <Content Include="Styles\images\page4-img1.jpg" />
+    <Content Include="Styles\images\page4-img2.jpg" />
+    <Content Include="Styles\images\page4-img3.jpg" />
+    <Content Include="Styles\images\page4-img4.jpg" />
+    <Content Include="Styles\images\page5-img1.jpg" />
+    <Content Include="Styles\images\page5-img2.jpg" />
+    <Content Include="Styles\images\Patrón-de-fondo_-fondo-negro-pizarra-natural-_-Foto-Premium.jpg" />
+    <Content Include="Styles\images\prev.png" />
+    <Content Include="Styles\images\prev1.gif" />
+    <Content Include="Styles\images\search-marker.png" />
+    <Content Include="Styles\images\shadow.png" />
+    <Content Include="Styles\images\shadow2.png" />
+    <Content Include="Styles\images\slide-1.jpg" />
+    <Content Include="Styles\images\slide-2.jpg" />
+    <Content Include="Styles\images\slide-3.jpg" />
+    <Content Include="Styles\images\soc-link1.png" />
+    <Content Include="Styles\images\soc-link2.png" />
+    <Content Include="Styles\images\soc-link3.png" />
+    <Content Include="Styles\images\ui.totop.png" />
+    <Content Include="Styles\js\camera.js" />
+    <Content Include="Styles\js\forms.js" />
+    <Content Include="Styles\js\html5shiv.js" />
+    <Content Include="Styles\js\jquery-migrate-1.1.1.js" />
+    <Content Include="Styles\js\jquery.carouFredSel-6.1.0-packed.js" />
+    <Content Include="Styles\js\jquery.easing.1.3.js" />
+    <Content Include="Styles\js\jquery.equalheights.js" />
+    <Content Include="Styles\js\jquery.fancybox-1.3.4.js" />
+    <Content Include="Styles\js\jquery.js" />
+    <Content Include="Styles\js\jquery.mobile.customized.min.js" />
+    <Content Include="Styles\js\jquery.mobilemenu.js" />
+    <Content Include="Styles\js\jquery.touchSwipe.min.js" />
+    <Content Include="Styles\js\jquery.ui.totop.js" />
+    <Content Include="Styles\js\PIE.htc" />
+    <Content Include="Styles\js\PIE.php" />
+    <Content Include="Styles\js\script.js" />
+    <Content Include="Styles\js\superfish.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -225,9 +332,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>61993</DevelopmentServerPort>
+          <DevelopmentServerPort>49619</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44354/</IISUrl>
+          <IISUrl>https://localhost:44389/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

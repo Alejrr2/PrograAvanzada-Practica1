@@ -170,6 +170,7 @@
     <Content Include="Styles\css\reset.css" />
     <Content Include="Styles\css\skeleton.css" />
     <Content Include="Styles\css\style.css" />
+    <Content Include="Styles\css\styles.min.css" />
     <Content Include="Styles\css\superfish.css" />
     <Content Include="Styles\images\arrows.png" />
     <Content Include="Styles\images\banner1.jpg" />
@@ -240,10 +241,10 @@
     <Content Include="Styles\images\page4-img4.jpg" />
     <Content Include="Styles\images\page5-img1.jpg" />
     <Content Include="Styles\images\page5-img2.jpg" />
-    <Content Include="Styles\images\Patrón-de-fondo_-fondo-negro-pizarra-natural-_-Foto-Premium.jpg" />
     <Content Include="Styles\images\prev.png" />
     <Content Include="Styles\images\prev1.gif" />
     <Content Include="Styles\images\search-marker.png" />
+    <Content Include="Styles\images\seodashlogo.png" />
     <Content Include="Styles\images\shadow.png" />
     <Content Include="Styles\images\shadow2.png" />
     <Content Include="Styles\images\slide-1.jpg" />
@@ -284,6 +285,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Registrarse.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

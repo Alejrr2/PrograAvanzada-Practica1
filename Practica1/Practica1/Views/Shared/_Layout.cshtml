@@ -86,7 +86,6 @@
 </head>
 <body class="page1">
     <!--==============================header=================================-->
-    @RenderBody()
     <header>
         <div class="head-box1">
             <div class="container_24">
@@ -126,34 +125,36 @@
         </div>
     </header>
 
-   
-    <!--==============================footer=================================-->
-    <footer>
-        <div class="container_24">
-            <div class="grid_24">
+    <main>
+        @RenderBody()
+    </main>
+            <!--==============================footer=================================-->
+            <footer>
+                <div class="container_24">
+                    <div class="grid_24">
 
-                <ul class="foot-menu">
-                    <li class="last3"><a class="active" href="index.html">Home</a></li>
-                    <li><a href="index-1.html">About Us</a></li>
-                    <li><a href="index-2.html">Products</a></li>
-                    <li><a href="index-3.html">Recipes</a></li>
-                    <li><a href="index-4.html">Catering</a></li>
-                    <li><a href="index-5.html">Contacts</a></li>
-                </ul>
+                        <ul class="foot-menu">
+                            <li class="last3"><a class="active" href="index.html">Home</a></li>
+                            <li><a href="index-1.html">About Us</a></li>
+                            <li><a href="index-2.html">Products</a></li>
+                            <li><a href="index-3.html">Recipes</a></li>
+                            <li><a href="index-4.html">Catering</a></li>
+                            <li><a href="index-5.html">Contacts</a></li>
+                        </ul>
 
 
 
-                <div class="foot-page2">
-                    <span class="text6">Pasta &amp; Ravioli Co.</span>
-                    &copy; 2013  |   <a href="index-6.html">Privacy Policy</a>  <!-- {%FOOTER_LINK} -->
-                </div> <div class="clear"></div> <ul class="soc-links">
-                    <li><a class="soc-link1" href="#"></a></li>
-                    <li><a class="soc-link2" href="#"></a></li>
-                    <li><a class="soc-link3" href="#"></a></li>
-                </ul>
-            </div>
-        </div>
+                        <div class="foot-page2">
+                            <span class="text6">Pasta &amp; Ravioli Co.</span>
+                            &copy; 2013  |   <a href="index-6.html">Privacy Policy</a>  <!-- {%FOOTER_LINK} -->
+                        </div> <div class="clear"></div> <ul class="soc-links">
+                            <li><a class="soc-link1" href="#"></a></li>
+                            <li><a class="soc-link2" href="#"></a></li>
+                            <li><a class="soc-link3" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
 
-    </footer>
-</body>
+            </footer>
+        </body>
 </html>

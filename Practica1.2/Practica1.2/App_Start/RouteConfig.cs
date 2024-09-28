@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Practica1
+namespace Practica1._2
 {
     public class RouteConfig
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Practica1.Controllers
+namespace Practica1._2.Controllers
 {
     public class HomeController : Controller
     {
@@ -23,12 +23,6 @@ namespace Practica1.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-        public ActionResult Register()
-        {
-            ViewBag.Message = "Your register page.";
 
             return View();
         }

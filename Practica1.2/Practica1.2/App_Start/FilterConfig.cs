@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Practica1
+namespace Practica1._2
 {
     public class FilterConfig
     {

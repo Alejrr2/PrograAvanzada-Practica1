@@ -227,6 +227,7 @@
     <Folder Include="Styles\css\" />
     <Folder Include="Styles\images\" />
     <Folder Include="Styles\js\" />
+    <Folder Include="Views\Productos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

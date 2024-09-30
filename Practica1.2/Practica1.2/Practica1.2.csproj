@@ -221,6 +221,7 @@
     <Content Include="Views\Login\Registro.cshtml" />
     <Content Include="Views\Carrito\Canasta.cshtml" />
     <Content Include="Views\Productos\Productos.cshtml" />
+    <Content Include="Views\Login\RecuperarAcceso.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -229,7 +230,6 @@
     <Folder Include="Styles\css\" />
     <Folder Include="Styles\images\" />
     <Folder Include="Styles\js\" />
-    <Folder Include="Views\Productos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

@@ -18,5 +18,10 @@ namespace Practica1._2.Controllers
         {
             return View();
         }
+
+        public ActionResult RecuperarAcceso()
+        {
+            return View();
+        }
     }
 }

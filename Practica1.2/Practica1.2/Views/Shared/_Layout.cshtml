@@ -108,14 +108,7 @@
                     <nav>
                         <ul class="sf-menu">
                             <li class="current"><a class="active" href=@Url.Action("Index", "Home")>Inicio</a></li>
-                            <li>
-                                <a href="index-2.html">Productos</a>
-                                <ul>
-                                    <li><a href="#">what’s new</a></li>
-                                    <li><a href="#">most popular</a></li>
-                                    <li><a href="#">gallery</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="@Url.Action("Productos","Productos")">Productos</a></li>
                             <li><a href="@Url.Action("InicioSesion", "Login")">Ingresar</a></li>
                             <li><a href="@Url.Action("Canasta", "Carrito")">Carrito</a></li>
                             <li><a href="index-5.html">Contacto</a></li>
@@ -137,7 +130,7 @@
 
                 <ul class="foot-menu">
                     <li class="last3"><a class="active" href=@Url.Action("Index", "Home")>Inicio</a></li>
-                    <li><a href="index-2.html">Productos</a></li>
+                    <li><a href="@Url.Action("Productos","Productos")">Productos</a></li>
                     <li><a href="@Url.Action("InicioSesion", "Login")">Ingresar</a></li>
                     <li><a href="@Url.Action("Canasta", "Carrito")">Carrito</a></li>
                     <li><a href="index-5.html">Contacto</a></li>

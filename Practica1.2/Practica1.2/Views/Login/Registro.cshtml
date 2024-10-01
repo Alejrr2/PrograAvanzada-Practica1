@@ -12,26 +12,33 @@
                     <div class="col-md-8 col-lg-6 col-xxl-3">
                         <div class="card mb-0">
                             <div class="card-body">
-                                <p class="text-center">LOGO</p>
+                                <br>
+                                <center> <p class="text6"> A La Pasta </p></center>
                                 <form>
                                     <div class="mb-3">
-                                        <label for="exampleInputtext1" class="form-label">Nombre: </label>
-                                        <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp">
+                                        <label for="emailInput" class="form-label">Nombre</label>
+                                        <input type="name" class="form-control" id="nameInput" placeholder="Ingresa tu nombre" required>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Correo electrónico: </label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <label for="emailInput" class="form-label">Número de télefono</label>
+                                        <input type="number" class="form-control" id="numbrelInput" placeholder="Ingresa tu número de télefono" required>
                                     </div>
-                                    <div class="mb-4">
-                                        <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <div class="mb-3">
+                                        <label for="emailInput" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="emailInput" placeholder="Ingresa tu email" required>
                                     </div>
-                                    <a href="@Url.Action("Index","Home")" class="btn btn-danger w-100 py-8 fs-4 mb-4">Registrarse</a>
+                                    <div class="mb-3">
+                                        <label for="passwordInput" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="passwordInput" placeholder="Ingresa tu contraseña" required>
+                                    </div>
+                                    <br>
+                                    <a href="@Url.Action("Index","Home")"button type="submit" class="btn w-100 py-2" style="background-color: #f44c31; color: white;">Registrarse</a>
+                                    <br><br>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <p class="fs-4 mb-0 fw-bold">¿Ya tiene una cuenta?</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a class="text-danger fw-bold ms-2" href="@Url.Action("InicioSesion", "Login")">Ingrese</a>
+                                        <a class="text-danger fw-bold ms-2" href="@Url.Action("InicioSesion", "Login")">Iniciar Sesión</a>
                                     </div>
                                 </form>
                             </div>

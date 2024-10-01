@@ -86,13 +86,18 @@
 
 
     <![endif]-->
+    <style>
+        .logo-img {
+            width: 300px;
+            height: auto;
+    </style>
 </head>
 <body class="page1">
     <!--==============================header=================================-->
     <header>
         <div class="head-box1">
             <div class="container_24">
-                <h1><a class="logo" href="@Url.Action("Index","Home") "><img src="~/Styles/images/newlogo.png" alt="A La Pasta Co.prefix"></a></h1>
+                <h1><a class="logo" href="@Url.Action("Index","Home") "><img src="~/Styles/images/newlogo.png" alt="A La Pasta Co.prefix" class="logo-img"></a></h1>
                 <form id="search1" action="search.php" method="GET">
                     <input type="text" name="s">
                     <div class="clear"></div>
@@ -137,7 +142,7 @@
 
 
                 <div class="foot-page2">
-                    <span class="text6">A La Pasta Co.</span>
+                    <span class="text6">A La Pasta</span>
                     &copy; 2024  |   <a>Privacy Policy</a>  <!-- {%FOOTER_LINK - Removed} -->
                 </div>
             </div>

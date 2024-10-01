@@ -144,6 +144,16 @@
     <Content Include="bin\Newtonsoft.Json.xml" />
     <Content Include="bin\Practica1.2.dll" />
     <Content Include="bin\Practica1.2.pdb" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Memory.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="bin\System.Web.Helpers.dll" />
     <Content Include="bin\System.Web.Helpers.xml" />
     <Content Include="bin\System.Web.Mvc.dll" />

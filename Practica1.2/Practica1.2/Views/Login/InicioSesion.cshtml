@@ -1,7 +1,8 @@
-﻿@{
+﻿@model Practica1._2.Models.Cliente
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml"; // Ruta a la plantilla
-    ViewBag.Title = "Login";
-    ViewBag.Message = "Por favor, ingrese sus credenciales para iniciar sesión.";
+
 }
 
 <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
@@ -15,31 +16,32 @@
                             <br>
                             <center> <p class="text6"> A La Pasta </p></center>
                             <h4 class="text-center mb-4">Iniciar Sesión</h4>
-                            <form>
+
+                            @using (Html.BeginForm("InicioSesion", "Login"))
+                            {
                                 <div class="mb-3">
-                                    <label for="emailInput" class="form-label">Correo Electrónico</label>
-                                    <input type="email" class="form-control" id="emailInput" placeholder="Ingresa tu email" required>
+                                    <label class="form-label">Correo Electrónico</label>
+                                    @Html.TextBoxFor(m => m.Correo, new { @class = "form-control", @type = "email" })
                                 </div>
                                 <div class="mb-3">
-                                    <label for="passwordInput" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="passwordInput" placeholder="Ingresa tu contraseña" required>
+                                    <label class="form-label">Contraseña</label>
+                                    @Html.TextBoxFor(m => m.Contraseña, new { @class = "form-control", @type = "password" })
                                 </div>
                                 <div class="d-flex justify-content-between mb-4">
                                     <div>
                                         <input type="checkbox" id="rememberMe" class="form-check-input">
                                         <label for="rememberMe" class="form-check-label">Recuérdame</label>
                                     </div>
-                                    <div>
-                                        <a href="@Url.Action("RecuperarAcceso","Login")" class="text-muted">¿Olvidaste tu contraseña?</a>
-                                    </div>
+                                    <input type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4" value="Iniciar Sesión">
                                 </div>
-                                <a href="@Url.Action("Index","Home")"button type="submit" class="btn w-100 py-2" style="background-color: #f44c31; color: white;">Iniciar Sesión</a>
+                                <a href="@Url.Action("InicioSesion", "Login")" button type="submit" class="btn w-100 py-2" style="background-color: #f44c31; color: white;">Iniciar Sesión</a>
 
-                            </form>
-                            <div class="text-center mt-4">
-                                <p>¿No tienes una cuenta? <a href="@Url.Action("Registro", "Login")" class="text-primary">Regístrate aquí</a></p>
+                            }
+
+                                <div class="text-center mt-4">
+                                    <p>¿No tienes una cuenta? <a href="@Url.Action("Registro", "Login")" class="text-primary">Regístrate aquí</a></p>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>

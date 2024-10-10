@@ -1,7 +1,8 @@
-﻿@{
+﻿@model Practica1._2.Models.Cliente
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml"; // Ruta a la plantilla
-    ViewBag.Title = "Register";
-    ViewBag.Message = "Please fill in the form below to register.";
+
 }
 
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
@@ -14,25 +15,35 @@
                             <div class="card-body">
                                 <br>
                                 <center> <p class="text6"> A La Pasta </p></center>
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="emailInput" class="form-label">Nombre</label>
-                                        <input type="name" class="form-control" id="nameInput" placeholder="Ingresa tu nombre" required>
+
+                                @using (Html.BeginForm("Registro", "Login"))
+                                {
+                                    <div class="mb-4">
+                                        <label class="form-label">Identificación</label>
+                                        @Html.TextBoxFor(m => m.ID, new { @class = "form-control", @type = "id" })
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="emailInput" class="form-label">Número de télefono</label>
-                                        <input type="number" class="form-control" id="numbrelInput" placeholder="Ingresa tu número de télefono" required>
+                                    <div class="mb-4">
+                                        <label class="form-label">Nombre</label>
+                                        @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", @type = "name" })
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="emailInput" class="form-label">Correo Electrónico</label>
-                                        <input type="email" class="form-control" id="emailInput" placeholder="Ingresa tu email" required>
+                                    <div class="mb-4">
+                                        <label class="form-label">Apellido</label>
+                                        @Html.TextBoxFor(m => m.Apellido, new { @class = "form-control", @type = "lastname"})
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="passwordInput" class="form-label">Contraseña</label>
-                                        <input type="password" class="form-control" id="passwordInput" placeholder="Ingresa tu contraseña" required>
+                                    <div class="mb-4">
+                                        <label class="form-label">Número de télefono</label>
+                                        @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control", @type = "tel" })
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label">Correo Electrónico</label>
+                                        @Html.TextBoxFor(m => m.Correo, new { @class = "form-control", @type = "email" })
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label">Contraseña</label>
+                                        @Html.TextBoxFor(m => m.Contraseña, new { @class = "form-control", @type = "password" })
                                     </div>
                                     <br>
-                                    <a href="@Url.Action("Index","Home")"button type="submit" class="btn w-100 py-2" style="background-color: #f44c31; color: white;">Registrarse</a>
+                                    <input type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4" value="Registrarse">
                                     <br><br>
                                     <div class="d-flex align-items-center justify-content-center">
                                         <p class="fs-4 mb-0 fw-bold">¿Ya tiene una cuenta?</p>
@@ -40,7 +51,9 @@
                                     <div class="d-flex align-items-center justify-content-center">
                                         <a class="text-danger fw-bold ms-2" href="@Url.Action("InicioSesion", "Login")">Iniciar Sesión</a>
                                     </div>
-                                </form>
+                                }
+
+
                             </div>
                         </div>
                     </div>

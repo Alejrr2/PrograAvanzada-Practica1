@@ -21,6 +21,7 @@ namespace Practica1._2.Models
         public string CorreoAd { get; set; }
         public string TelAd { get; set; }
         public int ConsecutivoRol { get; set; }
+        public string Contraseña { get; set; }
     
         public virtual tRoles tRoles { get; set; }
     }

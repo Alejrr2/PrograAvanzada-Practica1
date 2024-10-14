@@ -23,6 +23,7 @@ namespace Practica1._2.Models
         public int ConsecutivoPuesto { get; set; }
         public int ConsecutivoRol { get; set; }
         public bool ActivoEmp { get; set; }
+        public string Contraseña { get; set; }
     
         public virtual tPuestos tPuestos { get; set; }
         public virtual tRoles tRoles { get; set; }

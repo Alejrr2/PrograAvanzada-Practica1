@@ -1,4 +1,4 @@
-﻿
+﻿@model Practica1._2.Models.Cliente
 @{
     ViewBag.Title = "RecuperarAcceso";
 }
@@ -13,12 +13,14 @@
                         <div class="card-body">
                             <br>
                             <center> <p class="text6"> A La Pasta </p></center>
-                            <form>
+
+                            @using (Html.BeginForm("Registro", "Login"))
+                            {
                                 <div class="mb-3">
-                                    <label for="emailInput" class="form-label">Ingrese el correo electrónico que asoció con nosotros:</label>
-                                    <input type="email" class="form-control" id="emailInput" placeholder="Ingresa tu email" required>
+                                    <label class="form-label">Ingrese el correo electrónico que asoció con nosotros:</label>
+                                    @Html.TextBoxFor(m => m.Correo, new { @class = "form-control", @type = "email" })
                                 </div>
-                                <a href="@Url.Action("Index","Home")" button type="submit" class="btn w-100 py-2" style="background-color: #f44c31; color: white;">Enviar código</a>
+                                <input type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4" value="Enviar código">
                                 <br><br>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <p class="fs-4 mb-0 fw-bold">Volver a Inicio de Sesión</p>
@@ -26,8 +28,8 @@
                                 <div class="d-flex align-items-center justify-content-center">
                                     <a class="text-danger fw-bold ms-2" href="@Url.Action("InicioSesion", "Login")">Iniciar Sesión</a>
                                 </div>
-                            </form>
-                        </div>
+                            }
+                            </div>
                     </div>
                 </div>
             </div>

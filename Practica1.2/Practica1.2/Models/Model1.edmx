@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="AlaPastaDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="AlaPastaDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tAdmins">
           <Key>
             <PropertyRef Name="ConsecutivoAdmin" />
@@ -16,6 +16,7 @@
           <Property Name="CorreoAd" Type="varchar" MaxLength="80" Nullable="false" />
           <Property Name="TelAd" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="ConsecutivoRol" Type="int" Nullable="false" />
+          <Property Name="Contraseña" Type="varchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="tCategorias">
           <Key>
@@ -73,6 +74,7 @@
           <Property Name="ConsecutivoPuesto" Type="int" Nullable="false" />
           <Property Name="ConsecutivoRol" Type="int" Nullable="false" />
           <Property Name="ActivoEmp" Type="bit" Nullable="false" />
+          <Property Name="Contraseña" Type="varchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="tMetodos">
           <Key>
@@ -318,8 +320,7 @@
             <End Role="tProductos" EntitySet="tProductos" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AlaPastaDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -335,6 +336,7 @@
           <Property Name="TelAd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ConsecutivoRol" Type="Int32" Nullable="false" />
           <NavigationProperty Name="tRoles" Relationship="Self.FK_tAdmins_tRoles" FromRole="tAdmins" ToRole="tRoles" />
+          <Property Name="Contraseña" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tCategorias">
           <Key>
@@ -401,6 +403,7 @@
           <Property Name="ActivoEmp" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="tPuestos" Relationship="Self.FK_tEmpleados_tPuestos" FromRole="tEmpleados" ToRole="tPuestos" />
           <NavigationProperty Name="tRoles" Relationship="Self.FK_tEmpleados_tRoles" FromRole="tEmpleados" ToRole="tRoles" />
+          <Property Name="Contraseña" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="tMetodos">
           <Key>
@@ -667,6 +670,7 @@
           <EntitySetMapping Name="tAdmins">
             <EntityTypeMapping TypeName="AlaPastaDatabaseModel.tAdmins">
               <MappingFragment StoreEntitySet="tAdmins">
+                <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
                 <ScalarProperty Name="ConsecutivoAdmin" ColumnName="ConsecutivoAdmin" />
                 <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
                 <ScalarProperty Name="NombreAd" ColumnName="NombreAd" />
@@ -727,6 +731,7 @@
           <EntitySetMapping Name="tEmpleados">
             <EntityTypeMapping TypeName="AlaPastaDatabaseModel.tEmpleados">
               <MappingFragment StoreEntitySet="tEmpleados">
+                <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
                 <ScalarProperty Name="ConsecutivoEmp" ColumnName="ConsecutivoEmp" />
                 <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
                 <ScalarProperty Name="NombreEmp" ColumnName="NombreEmp" />

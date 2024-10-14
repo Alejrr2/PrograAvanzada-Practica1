@@ -134,7 +134,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Categoría.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\DetallesPedido.cs" />
+    <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -150,6 +154,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\MétodoPago.cs" />
+    <Compile Include="Models\Pago.cs" />
+    <Compile Include="Models\Pedido.cs" />
+    <Compile Include="Models\Producto.cs" />
     <Compile Include="Models\tAdmins.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

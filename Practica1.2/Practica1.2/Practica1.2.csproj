@@ -126,6 +126,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CarritoController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\ContactoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -300,6 +301,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Styles\cssLayout\Canasta.css" />
+    <Content Include="Styles\cssLayout\Layout.css" />
     <Content Include="Styles\css\camera.css" />
     <Content Include="Styles\css\form.css" />
     <Content Include="Styles\css\ie.css" />
@@ -309,6 +312,9 @@
     <Content Include="Styles\css\style.css" />
     <Content Include="Styles\css\styles.min.css" />
     <Content Include="Styles\css\superfish.css" />
+    <Content Include="Styles\FuncionesJS\About.js" />
+    <Content Include="Styles\FuncionesJS\Layout.js" />
+    <Content Include="Styles\FuncionesJS\Productos.js" />
     <Content Include="Styles\images\arrows.png" />
     <Content Include="Styles\images\banner1.jpg" />
     <Content Include="Styles\images\banner2.jpg" />
@@ -418,7 +424,6 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Nosotros\About.cshtml" />
     <Content Include="Views\Contacto\Contact.cshtml" />
@@ -428,10 +433,12 @@
     <Content Include="Views\Carrito\Canasta.cshtml" />
     <Content Include="Views\Productos\Productos.cshtml" />
     <Content Include="Views\Login\RecuperarAcceso.cshtml" />
+    <Content Include="Views\Cliente\ActualizarPerfil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Styles\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

@@ -19,6 +19,16 @@ namespace Practica1._2.Models
 
         public string Contraseña { get; set; }
 
+        public string ContraseñaAnterior { get; set; }
+   
+        public string ConfirmarContraseña { get; set; }
+
+        public string Estado { get; set; }
+
+        public string ConsecutivoRol {  get; set; }
+
+
+
 
     }
 }

@@ -7,6 +7,7 @@ namespace Practica1._2.Models
 {
     public class Cliente
     {
+        public int Consecutivo { get; set; }
         public string ID { get; set; }
 
         public string Nombre { get; set; }

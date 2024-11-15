@@ -13,7 +13,7 @@
         {
             <div class="mb-3">
                 <label class="form-label">Identificación</label>
-                @Html.TextBoxFor(m => m.ID, new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.ID, new { @class = "form-control", @readOnly = true, style = "background-color: #f5efee;" })
             </div>
             <div class="mb-3">
                 <label class="form-label">Nombre</label>

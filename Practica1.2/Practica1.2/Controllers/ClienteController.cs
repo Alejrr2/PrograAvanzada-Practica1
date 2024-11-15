@@ -11,23 +11,24 @@ namespace Practica1._2.Controllers
     {
         [HttpGet]
 
-        public ActionResult ActualizarPerfil()
+        public ActionResult ActualizarPerfil(long q)
         {
             using (var context = new AlaPastaDatabaseEntities())
             {
-                int Consecutivo = int.Parse(Session["Consecutivo"].ToString());
-                var datos = context.tClientes.Where(x => x.Consecutivo == Consecutivo).FirstOrDefault();
+
+                var datos = context.tClientes.Where(x => x.Consecutivo == q).FirstOrDefault();
                 var cliente = new Cliente();
 
                 if (datos != null)
                 {
+                    cliente.Consecutivo=datos.Consecutivo;
                     cliente.ID = datos.IdCliente;
                     cliente.Nombre = datos.NombreCliente;
                     cliente.Apellido = datos.ApellidoCliente;
                     cliente.Correo = datos.CorreoCliente;
                     cliente.Telefono = datos.TelCliente;
                 }
-                return View();
+                return View(cliente);
             }
 
         }
@@ -38,14 +39,21 @@ namespace Practica1._2.Controllers
         {
             using (var context = new AlaPastaDatabaseEntities()) { 
             
-                int Consecutivo = int.Parse(Session["Consecutivo"].ToString());
-                var respuesta=context.ActualizarPerfil(model.ID, model.Nombre, model.Apellido,model.Correo,model.Telefono,Consecutivo,0);
+                var datos=context.tClientes.Where(x=>x.Consecutivo==model.Consecutivo).FirstOrDefault();
 
-                if (respuesta > 0)
+                if (datos != null)
                 {
-                    Session["NombreUsuario"] = model.Nombre;
-                    return RedirectToAction("Index", "Home");
+                    datos.NombreCliente = model.Nombre;
+                    datos.ApellidoCliente=model.Apellido;
+                    datos.CorreoCliente=model.Correo;
+                    datos.TelCliente=model.Telefono;
 
+                    var respuesta=context.SaveChanges();
+
+                    if (respuesta > 0)
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 ViewBag.MensajePantalla = "Su información no se ha podido actualizar correctamente";
 

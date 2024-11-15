@@ -11,6 +11,8 @@
     <link rel="shortcut icon" type="image/png" href="~/Styles/images/spaguetti.png" />
     <link rel="stylesheet" href="~/Styles/css/styles.min.css" />
     <link rel="stylesheet" href="~/Styles/cssLayout/Layout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css" />
 </head>
 <body class="page1">
     <!--==============================header=================================-->
@@ -37,7 +39,24 @@
                             <li><a href="@Url.Action("About","Nosotros")">Nosotros</a></li>
                             <li><a href="@Url.Action("Contact","Contacto")">Contactenos</a></li>
                             <li><a href="@Url.Action("Canasta", "Carrito")">Carrito</a></li>
-                            <li><a href="@Url.Action("InicioSesion", "Login")">Ingresar</a></li>
+                            @if (Session["RolUsuario"] != null)
+                            {
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                                    <div class="message-body">
+                                        <a href="@Url.Action("ActualizarPerfil", "Cliente")" class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-user fs-6"></i>
+                                            <p class="mb-0 fs-3">Actualizar Perfil</p>
+                                        </a>
+
+                                        <a href="@Url.Action("CierreSesion", "Login")" class="btn btn-outline-primary mx-3 mt-2 d-block">Cerrar Sesión</a>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <li><a href="@Url.Action("InicioSesion", "Login")">Ingresar</a></li>
+                            }
+
                         </ul>
                         <div class="clear"></div>
                     </nav>
@@ -71,7 +90,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
     <script src="~/Styles/js/jquery.js"></script>

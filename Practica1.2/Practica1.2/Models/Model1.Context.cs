@@ -10,6 +10,7 @@
 namespace Practica1._2.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
@@ -24,7 +25,12 @@ namespace Practica1._2.Models
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
+        internal void RegistroUsuario(object identificacion, string nombre, object correoElectronico, object contrasenna)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual DbSet<tAdmins> tAdmins { get; set; }
         public virtual DbSet<tCategorias> tCategorias { get; set; }
         public virtual DbSet<tClientes> tClientes { get; set; }
@@ -37,5 +43,8 @@ namespace Practica1._2.Models
         public virtual DbSet<tProductos> tProductos { get; set; }
         public virtual DbSet<tPuestos> tPuestos { get; set; }
         public virtual DbSet<tRoles> tRoles { get; set; }
+        public virtual DbSet<InicioSesion_Result> InicioSesion_Result { get; set; }
+        public virtual DbSet<tClientes> tClientes { get; set; }
+        public virtual DbSet<tAdmins> tAdmins { get; set; }
     }
 }

@@ -140,6 +140,7 @@
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\DetallesPedido.cs" />
     <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\InicioSesion.cs" />
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

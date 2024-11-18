@@ -15,7 +15,5 @@ namespace Practica1._2.Models
         public int ConsecutivoRol { get; set; }
         public bool Activo { get; set; }
         public string NombreRol { get; set; }
-        public virtual DbSet<tClientes> tClientes { get; set; }
-        public virtual DbSet<tAdmins> tAdmins { get; set; }
     }
 }

@@ -22,7 +22,7 @@ namespace Practica1._2.Controllers
         [HttpPost]
         public ActionResult InicioSesion(Cliente model)
         {
-            if (string.IsNullOrEmpty((string)model.Identificacion) || string.IsNullOrEmpty((string)model.Contrasenna))
+            if (string.IsNullOrEmpty((string)model.ID) || string.IsNullOrEmpty((string)model.Contraseña))
             {
                 ViewBag.Error = "Por favor, ingrese su usuario y contraseña.";
                 return View();
@@ -31,7 +31,7 @@ namespace Practica1._2.Controllers
             using (var context = new AlaPastaDatabaseEntities())
             {
                 // Llama al procedimiento almacenado `InicioSesion` para validar las credenciales
-                var resultado = context.InicioSesion(model.Identificacion, model.Contrasenna)
+                var resultado = context.InicioSesion(model.ID, model.Contraseña)
                     .FirstOrDefault();
 
                 if (resultado != null)
@@ -65,7 +65,7 @@ namespace Practica1._2.Controllers
                 using (var context = new AlaPastaDatabaseEntities())
                 {
                     // Llama al procedimiento almacenado `RegistroUsuario`
-                    context.RegistroUsuario(model.Identificacion, model.Nombre, model.CorreoElectronico, model.Contrasenna);
+                    context.RegistroUsuario(model.ID, model.Nombre, model.Correo, model.Contraseña);
                 }
 
                 return RedirectToAction("InicioSesion", "Login");
@@ -87,7 +87,7 @@ namespace Practica1._2.Controllers
         {
             using (var context = new AlaPastaDatabaseEntities())
             {
-                var cliente = context.tClientes.FirstOrDefault(x => x.IdCliente == model.Identificacion);
+                var cliente = context.tClientes.FirstOrDefault(x => x.IdCliente == model.ID);
 
                 if (cliente != null)
                 {

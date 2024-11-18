@@ -44,7 +44,5 @@ namespace Practica1._2.Models
         public virtual DbSet<tPuestos> tPuestos { get; set; }
         public virtual DbSet<tRoles> tRoles { get; set; }
         public virtual DbSet<InicioSesion_Result> InicioSesion_Result { get; set; }
-        public virtual DbSet<tClientes> tClientes { get; set; }
-        public virtual DbSet<tAdmins> tAdmins { get; set; }
     }
 }

@@ -26,9 +26,7 @@ namespace Practica1._2.Models
 
         public string Estado { get; set; }
 
-        public string ConsecutivoRol {  get; set; }
-        public object Identificacion { get; internal set; }
-        public object Contrasenna { get; internal set; }
-        public object CorreoElectronico { get; internal set; }
+        public string ConsecutivoRol {  get; set; } 
+
     }
 }

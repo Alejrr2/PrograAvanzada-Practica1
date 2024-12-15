@@ -320,6 +320,7 @@
     <Content Include="Styles\css\superfish.css" />
     <Content Include="Styles\FuncionesJS\About.js" />
     <Content Include="Styles\FuncionesJS\Layout.js" />
+    <Content Include="Styles\FuncionesJS\ModalEmp.js" />
     <Content Include="Styles\FuncionesJS\Productos.js" />
     <Content Include="Styles\images\arrows.png" />
     <Content Include="Styles\images\banner1.jpg" />
@@ -441,13 +442,15 @@
     <Content Include="Views\Login\RecuperarAcceso.cshtml" />
     <Content Include="Views\Cliente\ActualizarPerfil.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Empleado\VerEmpleados.cshtml" />
+    <Content Include="Views\Empleado\ActualizarEmpleado.cshtml" />
+    <Content Include="Views\Empleado\CrearEmpleado.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Data\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Styles\NewFolder1\" />
-    <Folder Include="Views\Empleado\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
